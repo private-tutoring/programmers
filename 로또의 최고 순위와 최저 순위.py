@@ -6,4 +6,3 @@ def solution(lottos, win_nums):
         if lotto == 0: Z += 1
         if lotto in win_nums: R += 1
     return [arr_rank[Z+R], arr_rank[R]]
-print(solution([44, 1, 0, 0, 31, 25], [31, 10, 45, 1, 6, 19]))

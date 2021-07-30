@@ -7,4 +7,3 @@ def solution(numbers):
     
     return sorted(list(answer))
 
-print(solution([2,1,3,4,1]))

@@ -16,4 +16,3 @@ def solution(s):
         s = s.replace(k, v)
     return s
 
-print(solution("onenineseven"))
