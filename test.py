@@ -1,3 +1,3 @@
-s = "abcdefg"
+d = set()
 
-print(s[3:-3])
+print(d)
