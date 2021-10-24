@@ -1,7 +1,5 @@
-d = []
-d.append([1,2,3,4,5])
-lost = [1234,213545]
-for i in 
-    if lost[i] == reserve[lost[i]]:
+s1 = [1, 3]
+s2 = [1, 2, 4, 8]
 
-print(d)
+print(max(s1))
+print(max(s2))

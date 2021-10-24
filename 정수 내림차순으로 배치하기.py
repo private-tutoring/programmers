@@ -1,14 +1,10 @@
 def solution(n):
-    answer = 0
-    s = ''
-    result = []
-    answer = list(str(n))
-    for i in range(len(answer)):
-        result.append(int(answer[i]))
-    result.sort()
-    result.reverse()
-    for i in range(len(result)):
-        s += str(result[i])
-    return int(s)
-
+    answer = []
+    answer2 = ""
+    for i in range(len(str(n))):
+        answer.append(str(n)[i])
+    answer.sort(reverse=True)
+    for i in answer:
+        answer2 += str(i)
+    return int(answer2)
 print(solution(118372))

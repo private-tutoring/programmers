@@ -5,3 +5,4 @@ def solution(x, n):
         s += x
         answer.append(s)
     return answer
+    
