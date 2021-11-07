@@ -1,5 +1,6 @@
 def solution(s):
-    arr = list(s)
-    arr.sort(key=lambda x: ord(x), reversed=True)
-    
-    return "".join(arr)
+    s = list(s)
+    s.sort(reverse=True)
+    return "".join(s)
+
+print(solution("Zbcdefg"))

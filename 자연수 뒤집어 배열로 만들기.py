@@ -1,9 +1,5 @@
 def solution(n):
-    result = []
-    answer = list(str(n))
-    for i in range(1, len(answer)+1):
-        result.append(int(answer[-i]))
-    return result
+    answer = list(map(int, str(n)))
+    return answer[::-1]
 
-
-solution(12345)
+print(solution(12345678910))

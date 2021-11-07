@@ -1,17 +1,12 @@
 def solution(n):
-    arr = [True for i in range(n+1)]
-    arr[0], arr[1] = False, False
-    
-    for i, v in enumerate(arr):
-        if v == True:
-            for j in range(2, len(arr)):
-                if i * j >= len(arr):
+    arr = [True for _ in range(n+1)]
+    for i in range(2, len(arr)):
+        if arr[i] == True:
+            for j in range(2, n+1):
+                if i * j > n:
                     break
                 arr[i * j] = False
-
-    return arr.count(True)
-    print(arr)
-    
+    return arr.count(True)-2
 
 
 print(solution(5))
