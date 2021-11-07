@@ -1,6 +1,6 @@
 def solution(n):
     answer = 0
-    n = list(str(n))
-    for i in range(len(n)):
-        answer += int(n[i])
+    for i in str(n):
+        answer += int(i)
     return answer
+    

@@ -1,5 +1,10 @@
-s1 = [1, 3]
-s2 = [1, 2, 4, 8]
+a = [
+    {"id": 3},
+    {"id": 6},
+    {"id": 2},
+    {"id": 0},
+    {"id": 9}
+]
 
-print(max(s1))
-print(max(s2))
+a.sort(key=lambda x: x['id'])
+print(a)
