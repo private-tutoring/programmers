@@ -7,4 +7,3 @@ def solution(a, b):
     return l[t]
 
 
-print(solution(5, 24))
