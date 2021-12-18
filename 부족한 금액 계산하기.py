@@ -1,6 +1,12 @@
 def solution(price, money, count):
-    for i in range(1, count+1):
-        money -= price * i
-    if money >= 0:
+    nom_price = price
+    for i in range(2, count+1):
+        price += nom_price * i
+    if price < money:
         return 0
-    return abs(money)
+    return price - money
+
+
+
+
+print(solution(3,20,4))
