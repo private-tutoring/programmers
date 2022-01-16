@@ -44,7 +44,6 @@ def solution(N, stages):
             same_stage_count = 1
             user_length = total_user_length - minus_user_length # 총 사용자에서 스테이지에 도달한 사용자의 수 
             rate_list[stages[i]] = [same_stage_count, user_length]
-        
         minus_user_length += 1
 
     result = dict()    
